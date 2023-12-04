@@ -27,7 +27,6 @@ public class Day2 {
     int res = 0;
     for (String line : input) {
       String[] colonSplit = line.split(": ");
-      int id = Integer.parseInt(colonSplit[0].substring(5));
       res += calculatePower(colonSplit[1]);
     }
     System.out.println(res);
